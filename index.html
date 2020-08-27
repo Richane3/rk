@@ -9,6 +9,7 @@
 	<!-- Loads <model-viewer> for old browsers like IE11: -->
 	<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
   <title>WebAR_test_reference_kazuki's_page</title>
+	
   <style>
   .wrapper {
     max-width: 640px;
@@ -29,15 +30,32 @@
   img {
     max-width: 100%;
   }
+.cp_bgpattern06 {
+	background-color:#FFD54F;
+	background:linear-gradient(#FFD54F,#FFA000);
+}
+.cp_bgpattern06::after {
+	content: '';
+	height:100%;
+	width:100%;
+	display:block;
+	background-size: 20px 20px;
+	background-image:
+	 linear-gradient(rgba(255,255,255,.25) 3%, rgba(255,255,255,.25) 3%, transparent 3%,
+	  transparent 97%, rgba(255,255,255,.25) 97%, rgba(255,255,255,.25) 100%),
+	 linear-gradient(90deg, rgba(255,255,255,.25) 3%, rgba(255,255,255,.25) 3%, transparent 3%,
+	  transparent 97%, rgba(255,255,255,.25) 97%, rgba(255,255,255,.25) 100%);
+}
   </style>
 </head>
 <body>
+<div class="cp_bgpattern06">
 <div class="wrapper">
   <h1 style="background-color:#ff9933">WebAR Test pages</h1>
 <div class="arzone"><center><figure class="ar-img">
   <model-viewer preload poster="img/Preloader_1.gif" src="img/wood_chair_test3.glb" ios-src="img/wood_chair_test2.usdz" auto-rotate camera-controls ar alt="サンプル"></model-viewer>
 	</figure>
-	<p align="center">　　　　　　　　　　ARで見てみる ⤴</p></center></div>
+	<p align="center">　　　　　　　　ARで見てみる(スマホ限定) ⤴</p></center></div>
 	<h2>プレーンウッドチェア（白）</h2><h1>12,000円(税抜)</h1>
 	<p>白色のウッドチェア。<br>背もたれがしっかりしており、腰に負担がかからない。</p>
 	<a href="https://www.cue-inc.co.jp/" align="right">購入はこちら</a>
@@ -45,6 +63,6 @@
 	<center>
 	<h3>PCの方は以下から読み込んでください！</h3>
 	<img src="img/test.png"></center>
-	</div>
+	</div></div>
 </body>
 </html>
