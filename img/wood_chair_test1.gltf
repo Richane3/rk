@@ -1,408 +1,295 @@
 {
-  "accessors": [
-    {
-      "componentType": 5125,
-      "count": 31680,
-      "max": [
-        6241
-      ],
-      "min": [
-        0
-      ],
-      "type": "SCALAR"
+    "asset": {
+        "version": "2.0",
+        "generator": "Open Asset Import Library (assimp v5.0.5eb040c7)"
     },
-    {
-      "componentType": 5126,
-      "count": 6242,
-      "max": [
-        1,
-        0.99995714426040649,
-        0.99980288743972778
-      ],
-      "min": [
-        -1,
-        -1,
-        -0.99947875738143921
-      ],
-      "type": "VEC3"
-    },
-    {
-      "componentType": 5126,
-      "count": 6242,
-      "max": [
-        11.192405700683594,
-        28.083578109741211,
-        15.080417633056641
-      ],
-      "min": [
-        -11.18465518951416,
-        10.564425468444824,
-        -15.355244636535645
-      ],
-      "type": "VEC3"
-    },
-    {
-      "componentType": 5126,
-      "count": 6242,
-      "max": [
-        2.6274209022521973,
-        2.6249551773071289
-      ],
-      "min": [
-        -1.6274219751358032,
-        -1.6531789302825928
-      ],
-      "type": "VEC2"
-    },
-    {
-      "componentType": 5125,
-      "count": 4032,
-      "max": [
-        2657
-      ],
-      "min": [
-        0
-      ],
-      "type": "SCALAR"
-    },
-    {
-      "componentType": 5126,
-      "count": 2658,
-      "max": [
-        1,
-        1,
-        1
-      ],
-      "min": [
-        -1,
-        -1,
-        -1
-      ],
-      "type": "VEC3"
-    },
-    {
-      "componentType": 5126,
-      "count": 2658,
-      "max": [
-        12.386026382446289,
-        0.49648100137710571,
-        15.509645462036133
-      ],
-      "min": [
-        -12.386030197143555,
-        0.23270599544048309,
-        -13.091047286987305
-      ],
-      "type": "VEC3"
-    },
-    {
-      "componentType": 5126,
-      "count": 2658,
-      "max": [
-        1,
-        1
-      ],
-      "min": [
-        0,
-        1
-      ],
-      "type": "VEC2"
-    },
-    {
-      "componentType": 5125,
-      "count": 37752,
-      "max": [
-        7911
-      ],
-      "min": [
-        0
-      ],
-      "type": "SCALAR"
-    },
-    {
-      "componentType": 5126,
-      "count": 7912,
-      "max": [
-        1,
-        1,
-        1
-      ],
-      "min": [
-        -1,
-        -1,
-        -1
-      ],
-      "type": "VEC3"
-    },
-    {
-      "componentType": 5126,
-      "count": 7912,
-      "max": [
-        13.44709587097168,
-        29.726596832275391,
-        15.509649276733398
-      ],
-      "min": [
-        -13.447096824645996,
-        0.49589100480079651,
-        -15.509649276733398
-      ],
-      "type": "VEC3"
-    },
-    {
-      "componentType": 5126,
-      "count": 7912,
-      "max": [
-        2.3116440773010254,
-        2.3229320049285889
-      ],
-      "min": [
-        -1.2475160360336304,
-        -0.91080701351165771
-      ],
-      "type": "VEC2"
-    }
-  ],
-  "asset": {
-    "generator": "glTF-Maya-Exporter ver1.5.0",
-    "version": "2.0"
-  },
-  "bufferViews": [
-    {
-      "buffer": 0,
-      "byteLength": 21461,
-      "byteOffset": 0,
-      "target": 34962
-    },
-    {
-      "buffer": 0,
-      "byteLength": 2792,
-      "byteOffset": 21464,
-      "target": 34962
-    },
-    {
-      "buffer": 0,
-      "byteLength": 30425,
-      "byteOffset": 24256,
-      "target": 34962
-    }
-  ],
-  "buffers": [
-    {
-      "byteLength": 54684,
-      "uri": "wood_chair_test1.bin"
-    }
-  ],
-  "extensionsRequired": [
-    "KHR_draco_mesh_compression"
-  ],
-  "extensionsUsed": [
-    "KHR_draco_mesh_compression"
-  ],
-  "images": [
-    {
-      "name": "Malindi_wood",
-      "uri": ".\/Malindi_wood.jpg"
-    },
-    {
-      "name": "malindi_material",
-      "uri": ".\/malindi_material.jpg"
-    }
-  ],
-  "materials": [
-    {
-      "alphaMode": "OPAQUE",
-      "emissiveFactor": [
-        0,
-        0,
-        0
-      ],
-      "name": "Porada_Malindi:wire_224087145",
-      "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          0.89399999380111694,
-          0.89399999380111694,
-          0.89399999380111694,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 1
-      }
-    },
-    {
-      "alphaMode": "OPAQUE",
-      "emissiveFactor": [
-        0,
-        0,
-        0
-      ],
-      "name": "Porada_Malindi:wire_225088200",
-      "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          1,
-          1,
-          1,
-          1
-        ],
-        "baseColorTexture": {
-          "index": 0
+    "accessors": [
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 5284,
+            "type": "VEC3",
+            "max": [
+                11.192405700683594,
+                28.08357810974121,
+                15.08041763305664
+            ],
+            "min": [
+                -11.18465518951416,
+                10.564425468444825,
+                -15.355244636535645
+            ]
         },
-        "metallicFactor": 0,
-        "roughnessFactor": 1
-      }
-    },
-    {
-      "alphaMode": "OPAQUE",
-      "emissiveFactor": [
-        0,
-        0,
-        0
-      ],
-      "name": "Porada_Malindi:wire_224087144",
-      "normalTexture": {
-        "index": 1
-      },
-      "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          0.7070000171661377,
-          0.70073223114013672,
-          0.62145304679870605,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 1
-      }
-    }
-  ],
-  "meshes": [
-    {
-      "name": "Porada_Malindi:Box03Shape",
-      "primitives": [
         {
-          "attributes": {
-            "NORMAL": 1,
-            "POSITION": 2,
-            "TEXCOORD_0": 3
-          },
-          "extensions": {
-            "KHR_draco_mesh_compression": {
-              "attributes": {
-                "NORMAL": 2,
-                "POSITION": 0,
-                "TEXCOORD_0": 1
-              },
-              "bufferView": 0
-            }
-          },
-          "indices": 0,
-          "material": 2,
-          "mode": 4
-        }
-      ]
-    },
-    {
-      "name": "Porada_Malindi:Object04Shape",
-      "primitives": [
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 31680,
+            "type": "SCALAR",
+            "max": [
+                5283
+            ],
+            "min": [
+                0
+            ]
+        },
         {
-          "attributes": {
-            "NORMAL": 5,
-            "POSITION": 6,
-            "TEXCOORD_0": 7
-          },
-          "extensions": {
-            "KHR_draco_mesh_compression": {
-              "attributes": {
-                "NORMAL": 2,
-                "POSITION": 0,
-                "TEXCOORD_0": 1
-              },
-              "bufferView": 1
-            }
-          },
-          "indices": 4,
-          "material": 0,
-          "mode": 4
-        }
-      ]
-    },
-    {
-      "name": "Porada_Malindi:objPlane04Shape",
-      "primitives": [
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 680,
+            "type": "VEC3",
+            "max": [
+                12.386026382446289,
+                0.4964810013771057,
+                15.509645462036133
+            ],
+            "min": [
+                -12.386030197143555,
+                0.2327059954404831,
+                -13.091047286987305
+            ]
+        },
         {
-          "attributes": {
-            "NORMAL": 9,
-            "POSITION": 10,
-            "TEXCOORD_0": 11
-          },
-          "extensions": {
-            "KHR_draco_mesh_compression": {
-              "attributes": {
-                "NORMAL": 2,
-                "POSITION": 0,
-                "TEXCOORD_0": 1
-              },
-              "bufferView": 2
-            }
-          },
-          "indices": 8,
-          "material": 1,
-          "mode": 4
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 4032,
+            "type": "SCALAR",
+            "max": [
+                679
+            ],
+            "min": [
+                0
+            ]
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 6326,
+            "type": "VEC3",
+            "max": [
+                13.44709587097168,
+                29.72659683227539,
+                15.509649276733399
+            ],
+            "min": [
+                -13.447096824645996,
+                0.4958910048007965,
+                -15.509649276733399
+            ]
+        },
+        {
+            "bufferView": 5,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 6326,
+            "type": "VEC3",
+            "max": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "min": [
+                -1.0,
+                -1.0,
+                -1.0
+            ]
+        },
+        {
+            "bufferView": 6,
+            "byteOffset": 0,
+            "componentType": 5125,
+            "count": 37752,
+            "type": "SCALAR",
+            "max": [
+                6325
+            ],
+            "min": [
+                0
+            ]
         }
-      ]
-    }
-  ],
-  "nodes": [
-    {
-      "children": [
-        1,
-        2,
-        3
-      ],
-      "name": "wood_chair_test1"
-    },
-    {
-      "mesh": 0,
-      "name": "Porada_Malindi:Box03"
-    },
-    {
-      "mesh": 1,
-      "name": "Porada_Malindi:Object04"
-    },
-    {
-      "mesh": 2,
-      "name": "Porada_Malindi:objPlane04"
-    }
-  ],
-  "samplers": [
-    {
-      "magFilter": 9729,
-      "minFilter": 9729,
-      "wrapS": 10497,
-      "wrapT": 10497
-    },
-    {
-      "magFilter": 9728,
-      "minFilter": 9728,
-      "wrapS": 10497,
-      "wrapT": 10497
-    }
-  ],
-  "scene": 0,
-  "scenes": [
-    {
-      "nodes": [
-        0
-      ]
-    }
-  ],
-  "textures": [
-    {
-      "sampler": 0,
-      "source": 0
-    },
-    {
-      "sampler": 1,
-      "source": 1
-    }
-  ]
+    ],
+    "buffers": [
+        {
+            "byteLength": 517248,
+            "uri": "result.bin"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteOffset": 0,
+            "byteLength": 63408,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 63408,
+            "byteLength": 126720,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 190128,
+            "byteLength": 8160,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 198288,
+            "byteLength": 16128,
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 214416,
+            "byteLength": 75912,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 290328,
+            "byteLength": 75912,
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 366240,
+            "byteLength": 151008,
+            "target": 34963
+        }
+    ],
+    "images": [
+        {
+            "uri": "D:\\kyouyu_material\\3DCG\\DL_material\\VizPeople\\VizPeople_Free_3d_Models_Armchairs\\OBJ\\Porada_Malindi\\Malindi_wood.jpg"
+        }
+    ],
+    "materials": [
+        {
+            "name": "Porada_Malindi:wire_224087144",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.5656000375747681,
+                    0.5605857968330383,
+                    0.49716243147850039,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 0.9354631900787354
+            }
+        },
+        {
+            "name": "Porada_Malindi:wire_224087145",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.7152000069618225,
+                    0.7152000069618225,
+                    0.7152000069618225,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 0.9354631900787354
+            }
+        },
+        {
+            "name": "Porada_Malindi:wire_225088200",
+            "pbrMetallicRoughness": {
+                "baseColorTexture": {
+                    "index": 0
+                },
+                "baseColorFactor": [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 0.9354631900787354
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Porada_Malindi:Box03",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 0,
+                    "indices": 1,
+                    "attributes": {
+                        "POSITION": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Porada_Malindi:Object04",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 1,
+                    "indices": 3,
+                    "attributes": {
+                        "POSITION": 2
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Porada_Malindi:objPlane04",
+            "primitives": [
+                {
+                    "mode": 4,
+                    "material": 2,
+                    "indices": 6,
+                    "attributes": {
+                        "POSITION": 4,
+                        "NORMAL": 5
+                    }
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "name": "RootNode",
+            "children": [
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "name": "Porada_Malindi:Box03",
+            "mesh": 0
+        },
+        {
+            "name": "Porada_Malindi:Object04",
+            "mesh": 1
+        },
+        {
+            "name": "Porada_Malindi:objPlane04",
+            "mesh": 2
+        }
+    ],
+    "samplers": [
+        {}
+    ],
+    "scenes": [
+        {
+            "nodes": [
+                0
+            ]
+        }
+    ],
+    "textures": [
+        {
+            "source": 0,
+            "sampler": 0
+        }
+    ],
+    "scene": 0
 }
