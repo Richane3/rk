@@ -13,21 +13,13 @@
 
 <script src="https://unpkg.com/aframe-html-shader@0.2.0/dist/aframe-html-shader.min.js"></script>
 	<script src="VRaR_Mix_test/html2canvas.min.js"></script>
-<script>
-	var linkElements = document.getElementsByClassName("link-object");
-	for (var i = 0; i < linkElements.length; i++) {
-		linkElements[i].addEventListener('click', function() {
-			var link = this.getAttribute('data-link');
-			location.href = link;
-		}, false);
-	}
-</script>
+
 <style>
 .target {
     position: absolute;
     width: 1600px;
     height: 800px;
-    font-size: 500%;
+    font-size: 450%;
     background-color: #FFF;
     display: hidden;
     /*z-index: 1;*/
@@ -45,16 +37,7 @@
     width: 52%;
     padding: 4%;
 }
-
-.target>.detail {
-    padding: 3% 0;
-    text-align: center;
-    width: 92%;
-    color: #fff;
-    background-color: rgba(1, 1, 1, 0.6);
-    margin: 4%;
-}
-	</style>
+</style>
 </head>
 <body>
 <div id="target1" class="target">
