@@ -11,22 +11,15 @@
 <script src="https://unpkg.com/aframe-event-set-component@5.x.x/dist/aframe-event-set-component.min.js"></script>
 <script src="https://unpkg.com/aframe-html-shader@0.2.0/dist/aframe-html-shader.min.js"></script>
 	<script src="VRaR_Mix_test/html2canvas.min.js"></script>
-	
-<script>
-	var linkElements = document.getElementsByClassName("link-object");
-	for (var i = 0; i < linkElements.length; i++) {
-		linkElements[i].addEventListener('click', function() {
-			var link = this.getAttribute('data-link');
-			location.href = link;
-		}, false);
-	}
-</script>
 </head>
 <body>
-<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -1; overflow: hidden">
-	<p id="ele" style="font-size:5em;">詳細を見る</p>
-	</div>
-<a-scene>
+<div id="target1" class="target">
+	<img src="img/more.png" alt="learn more">
+	<div class="cf"><h3>詳細はこちら</h3>
+		<p>詳細情報や料金、ARによる大きさ確認ができます。</p></div>
+	<p class="detail">320px × 200px</p>
+</div>
+/*<a-scene>
 	<a-assets>
 		<img id="linkimg" src="img/more.png">
 		<img id="sky" src="img/pano_test.jpeg">
@@ -40,6 +33,6 @@
  <a-sky src="#sky" rotation="0 -90 0"></a-sky>
  <a-entity class="link-object" data-link="https://magnets.jp" geometry="primitive: plane; width: 1" position="-1 1.5 -2" material="shader: html; target: #ele" rotation="0 -2 0"></a-entity>
 
-</a-scene>
+</a-scene>*/
 </body>
 </html>
