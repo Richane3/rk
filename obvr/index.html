@@ -15,7 +15,9 @@
 <div class="wrap" width="800px" height="600px">
   <div id="target" class="rollerblade"><img width="100%" src="img/0.png" alt="Rollerblade.js"/></div>
 </div>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+</body>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" src="rollerblade.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -42,10 +44,8 @@ $("#target").rollerblade({
 imageArray: motions,
 sensitivity: 20,//数字を小さくするとマウス移動に対して回転の動きが早くなります
 drag: true,//ドラッグさせるかどうか
-auto:true,
-edgeStop:false
+auto:true
 })
 });
 </script>
-</body>
 </html>
