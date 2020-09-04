@@ -16,5 +16,38 @@
   <div id="target" class="rollerblade"><img src="img/0.png" alt="Rollerblade.js"/></div>
   <div class="mouse">← Mouse drag →</div>
 </div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="rollerblade.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+var motions = [
+//表示させたい画像パスを記述
+'img/0.png',
+'img/1.png',
+'img/2.png',
+'img/3.png',
+'img/4.png',
+'img/5.png',
+'img/6.png',
+'img/7.png',
+'img/8.png',
+'img/9.png',
+'img/10.png',
+'img/11.png',
+'img/12.png',
+'img/13.png',
+'img/14.png',
+'img/15.png'
+];
+
+$("#target").rollerblade({
+imageArray: motions,
+sensitivity: 20,//数字を小さくするとマウス移動に対して回転の動きが早くなります
+drag: true,//ドラッグさせるかどうか
+auto:true,
+edgeStop:false
+})
+});
+</script>
 </body>
 </html>
