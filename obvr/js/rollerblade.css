@@ -1,3 +1,18 @@
+.mouse{
+  text-align:center;
+  padding:20px 0px;
+  font-size:20px;
+}
+
+.rollerblade{
+  width: 100%;
+  height: auto;
+  display: block;
+  img{
+    width: 100%;
+  }
+}
+
 .rollerblade-img {	
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -11,5 +26,4 @@
 .rollerblade-drag {
 	cursor:move;
 }
-
 
