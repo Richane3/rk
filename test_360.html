@@ -13,7 +13,10 @@
 <link rel="stylesheet" href="VRaR_Mix_test/style.css">
 </head>
 <body>
+ <div id="loader">
 
+        <p>loading...</p>
+    </div>
     <div id="target1" class="target">
         <img src="img/more.png" alt="learn more">
         <div class="cf"><h3>詳細はこちら</h3><p>商品の詳細や料金、<br>ARによる大きさ確認ができます。</p></div>
@@ -86,4 +89,16 @@
 <script>var linkElements = document.getElementsByClassName("link-object");for (var i = 0; i < linkElements.length; i++) {
 		linkElements[i].addEventListener('click', function() {var link = this.getAttribute('data-link');location.href = link;}, false);}</script>
 </body>
+<script>
+    var scene = document.querySelector('a-scene');
+    var run = function () {
+        document.getElementById("loader").classList.add("hidden");
+    }
+
+    if (scene.hasLoaded) {
+      run();
+    } else {
+      scene.addEventListener('loaded', run);
+    }
+</script>
 </html>
