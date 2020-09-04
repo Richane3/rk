@@ -36,6 +36,10 @@
 <a-scene>
 	<a-assets>
 		<img id="sky" src="img/pano_test.jpeg">
+		<img id="mt1" src="">
+		<img id="mt2" src="">
+		<img id="mt3" src="">
+		<img id="mt4" src="">
 		</a-assets>
 	<a-camera>
 	<a-cursor fuse="true" color="black" scale="2 2">
@@ -74,10 +78,14 @@
 						 dur="0">
 			</a-animation>
 			</a-cursor></a-camera>
-<a-sky src="#sky" rotation="0 -90 0"></a-sky>
-<a-text value="XR showroom demo" color="#FFF" position="-2 3.3 -5" text="anchor: left; width: 5.6; color: #d3c612; baseline: top" rotation="0 -2 0" scale="1.8 1.8 1.8"></a-text>
-<a-entity class="link-object" data-link="https://magnets.jp" material="shader: html; target: #target1" position="-5 0.82153 1.36521" geometry="primitive: plane" rotation="0 90 0"></a-entity>
-</a-scene>
+	<a-sky src="#sky" rotation="0 -90 0"></a-sky>
+	<a-text value="XR showroom demo" color="#FFF" position="-2 3.3 -5" text="anchor: left; width: 5.6; color: #d3c612; baseline: top" rotation="0 -2 0" scale="1.8 1.8 1.8"></a-text>
+	<a-entity class="link-object" data-link="https://magnets.jp" material="shader: html; target: #target1" position="-5 0.82153 1.36521" geometry="primitive: plane" rotation="0 90 0"></a-entity>
+	<a-image src="#mt1" position="-5 0.82153 1.36521" rotation="0 90 0"></a-image>
+		<a-entity class="link-object" data-link="https://magnets.jp" material="shader: html; target: #target1" position="0 0 -5" geometry="primitive: plane" rotation="0 0 0"></a-entity>
+	<a-image src="#mt2" position="0 0 -5" rotation="0 0 0"></a-image>
+	
+	</a-scene>
 <script>var linkElements = document.getElementsByClassName("link-object");for (var i = 0; i < linkElements.length; i++) {
 		linkElements[i].addEventListener('click', function() {var link = this.getAttribute('data-link');location.href = link;}, false);}</script>
 </body>
