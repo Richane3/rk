@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<script src="https://aframe.io/releases/0.7.1/aframe.js"></script>
+	 <script src="https://unpkg.com/aframe-html-shader@0.2.0/dist/aframe-html-shader.min.js"></script>
 	<style>
 		*{
 			padding: 0;
@@ -17,8 +18,13 @@
 	</style>
 </head>
 <body>
+<div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -1; overflow: hidden">
+<p>html要素をA-Frame内に配置する</p>
+</div>
 	<a-scene>
-		<a-sky color="#24caff"></a-sky>
+		<a-assets><img src="pano_test.jpeg" id="sky">
+			</a-assets>
+		<a-sky src="#sky" position="0 -90 0"></a-sky>
 		<a-box position="-1 0.5 -3" color="#ccc"></a-box>
 	</a-scene>
 </body>
