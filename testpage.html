@@ -5,6 +5,7 @@
 	<title>Document</title>
 	<script src="https://aframe.io/releases/0.7.1/aframe.js"></script>
 	<script src="https://unpkg.com/aframe-html-shader@0.2.0/dist/aframe-html-shader.min.js"></script>
+	<script src="VRaR_Mix_test/link.js"></script>
 	<style>
 		*{
 			padding: 0;
@@ -65,14 +66,5 @@
 		<a-sky src="#sky" position="0 -90 0"></a-sky>
 		<a-entity class="link-object" data-link="https://magnets.jp" geometry="primitive: plane; width: 1" position="-1 1.5 -2" material="shader: html; target: #element;" rotation="0 -2 0"></a-entity>
 	</a-scene>
-	<script>
-	var linkElements = document.getElementsByClassName("link-object");
-	for (var i = 0; i < linkElements.length; i++) {
-		linkElements[i].addEventListener('click', function() {
-			var link = this.getAttribute('data-link');
-			location.href = link;
-		}, false);
-	}
-</script>
 </body>
 </html>
