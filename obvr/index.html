@@ -37,15 +37,15 @@ var motions = [
 'img/12.png',
 'img/13.png',
 'img/14.png',
-'img/15.png',
+'img/15.png'
   
 ];
 
 $("#target").rollerblade({
 imageArray: motions,
 sensitivity: 100,//数字を小さくするとマウス移動に対して回転の動きが早くなります
-drag: true,//ドラッグさせるかどうか
-auto: ture,
+drag: false, //ドラッグの設定
+auto: true, //自動的に動かす
 })
 });
 </script>
