@@ -347,7 +347,7 @@
 		imageArray : [],
 		sensitivity: 35,
 		drag : true,
-		auto : true,
+		auto : false,
 		edgeStop: false
 	};
 
