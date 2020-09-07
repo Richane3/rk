@@ -12,7 +12,7 @@
 
 <body>
 <div class="wrap" width="800px" height="600px">
-  <div id="target" class="rollerblade"><img src="img/0.png" alt="Rollerblade.js"/></div>
+  <div id="target" class="rollerblade"><img width="100%" src="img/0.png" alt="Rollerblade.js"/></div>
 </div>
 
 </body>
@@ -44,8 +44,8 @@ var motions = [
 $("#target").rollerblade({
 imageArray: motions,
 sensitivity: 100,//数字を小さくするとマウス移動に対して回転の動きが早くなります
-drag: false,//ドラッグさせるかどうか
-auto:ture
+drag: true,//ドラッグさせるかどうか
+auto: ture
 })
 });
 </script>
