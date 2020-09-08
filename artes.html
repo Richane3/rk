@@ -32,6 +32,12 @@ a.btn-c {
 a.btn-c i.fa {
   margin-right: 0;
 }
+#ta{
+  		display: table;
+}
+#tc{
+  		display: table-cell;
+}
 .mark{
   background-color: white;
   border-radius: 4px;
@@ -40,19 +46,14 @@ a.btn-c i.fa {
   bottom: 16px;
   right: 16px; 
   }
-#ta{
-  		display: table;
-}
-#tc{
-  		display: table-cell;
-}
     </style>
   </head>
   <body>
+<div id="ta"><div id="tc">
 <model-viewer src="img/table_01.glb" ios-src="img/table_01.usdz" auto-rotate camera-controls ar alt="サンプル">
     <button slot="ar-button" class="mark">ARに切り替える
-      </button></model-viewer>
-    <div class="ta"><div id="tc">
+  </button></model-viewer></div></div>
+    <div id="ta"><div id="tc">
       <h2>ミニテーブル</h2><p>￥30,000円(税抜)</p></div><div id="tc">
 <a href="https://www.cue-inc.co.jp/" class="btn btn--orange btn-c">購入はこちら
       </a></div>
