@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <title>model-viewer demo</title>    
     <script type="module" src="https://unpkg.com/@google/model-viewer@1.0.0/dist/model-viewer.min.js"></script>
+    <style>
+      model-viewer{
+        width:100%;
+        height:100%;
+        background-color:green;
   </head>
   <body>
     <model-viewer
@@ -13,6 +18,8 @@
       auto-rotate
       ar
       camera-controls
+      shadow-intensity:1
+        camera-orbit ="0deg 90deg 50%"
       alt="CUE-model"
     >
     </model-viewer>
