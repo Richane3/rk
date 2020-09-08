@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>model-viewer demo</title>    
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer@1.0.0/dist/model-viewer.min.js"></script>
     <style>
       model-viewer{
@@ -21,7 +22,9 @@
       camera-controls
       shadow-intensity:1
       alt="CUE-model">
+      <button id="custom-ar-button" slot="ar-button">Start AR</button>
     </model-viewer>
-    <h3>チェア ￥30,000円(税抜)</h3>
+    <h1>チェア　￥30,000円(税抜)</h1>
+    <a href="https">購入する</a>
   </body>
 </html>
