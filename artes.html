@@ -7,13 +7,6 @@
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 <style>
- .warp{
-    margin:0;
-    padding:0;
-    align:center;
-    border="1px";
-    border-radius:20%;
-  }
   model-viewer{
         width:100%;
         max-width:960px;
@@ -61,7 +54,7 @@ a.btn-c i.fa {
     </style>
   </head>
   <body>
-<div class="warp">
+<center>
 <model-viewer src="img/table_01.glb" ios-src="img/table_01.usdz" auto-rotate camera-controls ar alt="サンプル">
     <button slot="ar-button" class="mark">ARに切り替える
   </button></model-viewer>
@@ -72,6 +65,6 @@ a.btn-c i.fa {
       <div class="tc" align="right">
 <right><a href="https://www.cue-inc.co.jp/" class="btn btn--orange btn-c">購入はこちら
   </a></right></div>
-      </div></div>
+      </div></center>
   </body>
 </html>
