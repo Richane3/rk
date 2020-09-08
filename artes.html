@@ -7,6 +7,13 @@
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 <style>
+  warp{
+    margin:0;
+    padding:0;
+    align:center;
+    border="1px";
+    border-radius:20%;
+  }
         model-viewer{
         width:100%;
         max-width:960px;
@@ -54,18 +61,17 @@ a.btn-c i.fa {
     </style>
   </head>
   <body>
-    <center>
+<div class="warp">
 <model-viewer src="img/table_01.glb" ios-src="img/table_01.usdz" auto-rotate camera-controls ar alt="サンプル">
     <button slot="ar-button" class="mark">ARに切り替える
   </button></model-viewer>
     <div class="ta">
       <div class="tc">
-        <h2>ミニテーブル ￥30,000円(税抜)</div></div>
+        <h2 text-align="left">ミニテーブル ￥30,000円(税抜)</div></div>
       <div class="ta">
       <div class="tc" align="right">
 <right><a href="https://www.cue-inc.co.jp/" class="btn btn--orange btn-c">購入はこちら
   </a></right></div>
-    </div>
-      </center>
+      </div></div>
   </body>
 </html>
