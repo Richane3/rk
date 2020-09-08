@@ -39,8 +39,12 @@
       camera-orbit ="0deg 90deg 100%"
       alt="CUE-model">
     </model-viewer>
-    <div class="btn-radius-gradient-wrap">
   <button id="ar-button">ARで見る</button>
-</div>
   </body>
+<script>
+    document.querySelector('#ar-button').addEventListener('click', (event) => {
+      const modelViewer = document.querySelector("model-viewer");
+      modelViewer.activateAR();
+    });
+</script>
 </html>
