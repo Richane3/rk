@@ -1,1 +1,60 @@
-<!DOCTYPE html><html lang="ja"><head><title>360viewer</title><meta charset="UTF-8"/></head><body oncontextmenu='return false'><!--simply iniatialize it with class name"cloudimage-360",server folder path,file name and amount of images--><div class="cloudimage-360"data-folder="img/"data-filename="{index}.png"data-amount="16"data-magnifier="3"data-autoplay="true"data-spin-reverse></div><!--Add script tag with CDN link to js-cloudimage-360-view lib after all content in body tag--><script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/2/js-cloudimage-360-view.min.js"></script></body></html>
+<!DOCTYPE html><html lang="ja"><head><title>360viewer</title>
+<meta charset="UTF-8"/><style>
+.cloudimage-360{
+        width:100%;
+        max-width:960px;
+        height:70vh;
+}
+
+a.btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+    margin-right: 0;
+}
+
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+a.btn-c {
+  font-size: 1.3rem;
+  position: relative;
+  padding: 1rem 2rem 1rem 1.3rem;
+}
+a.btn-c i.fa {
+  margin-right: 0;
+}
+.ta{
+  		display: table;
+      width:100%;
+      max-width:960px;
+}
+.tc{
+  		display: table-cell;
+          width:50%;
+        max-width:480px;
+}
+.mark{
+  background-color: white;
+  border-radius: 4px;
+  border: none;
+  position: absolute;
+  bottom: 16px;
+  right: 16px; 
+  }
+    </style>
+  </head>
+<body oncontextmenu='return false'><!--simply iniatialize it with class name"cloudimage-360",server folder path,file name and amount of images-->
+<center>
+<div class="cloudimage-360"data-folder="..img/"data-filename="{index}.png"data-amount="16"data-magnifier="3"data-autoplay="true"data-spin-reverse></div>
+<div class="ta">
+<div class="tc" align="left">
+        <h2>ミニテーブル ￥30,000円(税抜)</div></div>
+      <div class="ta">
+      <div class="tc" align="right">
+<right><a href="https://www.cue-inc.co.jp/" class="btn btn--orange btn-c">購入はこちら
+  </a></right></div>
+      </div></center>
+<!--Add script tag with CDN link to js-cloudimage-360-view lib after all content in tag-->
+<script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/2/js-cloudimage-360-view.min.js"></script></body></html>
