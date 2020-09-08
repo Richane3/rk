@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="360&deg; Image - A-Frame">
+<title>360_Image_test</title>
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+<script src="https://unpkg.com/aframe-template-component@3.x.x/dist/aframe-template-component.min.js"></script>
+<script src="https://unpkg.com/aframe-layout-component@4.x.x/dist/aframe-layout-component.min.js"></script>
+<script src="https://unpkg.com/aframe-event-set-component@5.x.x/dist/aframe-event-set-component.min.js"></script>
+<script src="https://unpkg.com/aframe-html-shader@0.2.0/dist/aframe-html-shader.min.js"></script>
+<script src="VRaR_Mix_test/html2canvas.min.js"></script>
+<link rel="stylesheet" href="VRaR_Mix_test/style.css">
+</head>
+<body>
+ <div id="loader">
+        <p>loading...</p>
+    </div>
+    <div id="target1" class="target">
+        <img src="img/more.png" alt="learn more">
+        <div class="cf"><h3>詳細はこちら</h3><p>商品の詳細や料金、<br>ARによる大きさ確認ができます。</p></div>
+    </div>
+<a-scene>
+	<a-assets>
+		<img id="sky" src="img/pano_test.jpeg">
+		</a-assets>
+	<a-camera>
+	<a-cursor fuse="true" color="black" scale="2 2">
+			</a-cursor></a-camera>
+	<a-sky src="#sky" rotation="0 -90 0"></a-sky>
+	<a-text value="XR showroom demo" color="#FFF" position="-2 3.3 -5" text="anchor: left; width: 5.6; color: #d3c612; baseline: top" rotation="0 -2 0" scale="1.8 1.8 1.8"></a-text>
+		<a-entity class="link-object" data-link="https://loving-goodall-f9a8fe.netlify.app/" material="shader: html; target: #target1" position="-3 0.82153 -1" geometry="primitive: plane" rotation="0 90 0"></a-entity>
+</a-scene>
+<script>var linkElements = document.getElementsByClassName("link-object");for (var i = 0; i < linkElements.length; i++) {
+		linkElements[i].addEventListener('click', function() {var link = this.getAttribute('data-link');location.href = link;}, false);}</script>
+</body>
+<script>
+    var scene = document.querySelector('a-scene');
+    var run = function () {
+        document.getElementById("loader").classList.add("hidden");
+    }
+
+    if (scene.hasLoaded) {
+      run();
+    } else {
+      scene.addEventListener('loaded', run);
+    }
+</script>
+</html>
