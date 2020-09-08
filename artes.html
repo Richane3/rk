@@ -29,17 +29,22 @@ a.btn-c {
   position: relative;
   padding: 1rem 2rem 1rem 1.3rem;
 }
-
 a.btn-c i.fa {
   margin-right: 0;
 }
-
+.mark{
+  background-color: white;
+  border-radius: 4px;
+  border: none;
+  position: absolute;
+  bottom: 16px;
+  right: 16px; 
   }
     </style>
   </head>
   <body>
 <model-viewer src="img/table_01.glb" ios-src="img/table_01.usdz" auto-rotate camera-controls ar alt="サンプル">
-    <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">ARに切り替える
+    <button slot="ar-button" class="mark">ARに切り替える
       </button></model-viewer>
     <h2>ミニテーブル</h2><p>￥30,000円(税抜)</p>
 <a href="https://www.cue-inc.co.jp/" class="btn btn--orange btn-c">購入はこちら
