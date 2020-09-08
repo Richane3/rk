@@ -10,7 +10,7 @@
         height:80vh;
         background-color:black;
       }
-      #custom-ar-button {
+      #ar-button {
       position: absolute;
      content: '';
      width: 80px;
@@ -19,8 +19,9 @@
      left: 10px;
      top: 9px;
       border-radius: 50%;
-      font-size: 20px;
-      background-image: linear-gradient(#e8e8e8 0%, #d6d6d6 100%);
+      font-size: 10px;
+      color:#fff;
+      background-color: #eb6100;
       text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
       box-shadow: inset 0 2px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
       border-bottom: solid 2px #b5b5b5;
@@ -35,9 +36,11 @@
       ar
       camera-controls
       shadow-intensity:1
-      camera-orbit ="0deg 90deg 50%"
+      camera-orbit ="0deg 90deg 100%"
       alt="CUE-model">
-    <button id="custom-ar-button" slot="ar-button">ARで見る</button>
     </model-viewer>
+    <div class="btn-radius-gradient-wrap">
+  <button id="ar-button">ARで見る</button>
+</div>
   </body>
 </html>
