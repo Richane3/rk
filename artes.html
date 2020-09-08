@@ -10,21 +10,6 @@
         height:80vh;
         background-color:black;
       }
-      #ar-button {
-     content: '';
-     width: 100px;
-     height: 100px;
-     line-height: 80px;
-     left: 10px;
-     top: 5px;
-      border-radius: 50%;
-      font-size: 15px;
-      color:#fff;
-      background-color: blue;
-      text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
-      box-shadow: inset 0 2px 0 rgba(255,255,255,0.5), 0 2px 2px rgba(0, 0, 0, 0.19);
-      border-bottom: solid 2px #b5b5b5;
-  }
     </style>
   </head>
   <body>
@@ -38,12 +23,5 @@
       alt="CUE-model">
     </model-viewer>
     <h3>チェア ￥30,000円(税抜)</h3>
-    <button id="ar-button">OPEN AR</button>
-    <script>
-    document.querySelector('#ar-button').addEventListener('click', (event) => {
-      const modelViewer = document.querySelector("model-viewer");
-      modelViewer.activateAR();
-    });
-</script>
   </body>
 </html>
