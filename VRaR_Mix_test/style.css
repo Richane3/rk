@@ -62,6 +62,7 @@ a.btn-c i.fa {
 .mark{
   border: none;
   position: absolute;
+  display: inline-block;
   bottom: 16px;
   right: 16px;
 }
