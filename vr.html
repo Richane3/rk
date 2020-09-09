@@ -55,15 +55,9 @@
 		linkElements[i].addEventListener('click', function() {var link = this.getAttribute('data-link');location.href = link;}, false);}</script>
 </body>
 <script>
-    var scene = document.querySelector('a-scene');
-    var run = function () {
-        document.getElementById("loader").classList.add("hidden");
-    }
-
-    if (scene.hasLoaded) {
-      run();
-    } else {
-      scene.addEventListener('loaded', run);
-    }
+window.onload = function() {
+  const spinner = document.getElementById('loading');
+  spinner.classList.add('loaded');
+}
 </script>
 </html>
