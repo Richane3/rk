@@ -35,7 +35,7 @@
     </div>
 <a-scene>
 	<a-assets>
-		<img id="sky" src="img/pano1.jpg">
+		<img id="sky" src="img/pano3.jpg">
 		</a-assets>
 	<a-entity camera look-controls>
                 <a-entity cursor="rayOrigin: mouse">
@@ -53,11 +53,16 @@
 	</a-scene>
 <script>var linkElements = document.getElementsByClassName("link-object");for (var i = 0; i < linkElements.length; i++) {
 		linkElements[i].addEventListener('click', function() {var link = this.getAttribute('data-link');location.href = link;}, false);}</script>
-</body>
 <script>
-window.onload = function() {
-  const spinner = document.getElementById('loading');
-  spinner.classList.add('loaded');
-}
+    var scene = document.querySelector('a-sky');
+    var run = function () {
+        document.getElementById("loader").classList.add("hidden");
+    }
+
+    if (scene.hasLoaded) {
+      run();
+    } else {
+      scene.addEventListener('loaded', run);
+    }
 </script>
 </html>
