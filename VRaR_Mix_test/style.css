@@ -33,6 +33,7 @@
 a.btn--green {
   color: #fff;
   background-color: #094;
+  padding:3px;
 }
 
 a.btn--green:hover {
