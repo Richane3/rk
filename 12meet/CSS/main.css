@@ -1,0 +1,44 @@
+model-viewer{
+        width:100%;
+        max-width:960px;
+        height:70vh;
+        background-color:#FFF;
+}
+
+a.btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+    margin-right: 0;
+}
+
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+a.btn-c {
+  font-size: 1.3rem;
+  position: relative;
+  padding: 1rem 2rem 1rem 1.3rem;
+}
+a.btn-c i.fa {
+  margin-right: 0;
+}
+.ta{
+  		display: table;
+      width:100%;
+      max-width:960px;
+}
+.tc{
+  		display: table-cell;
+          width:50%;
+        max-width:480px;
+}
+.mark{
+  background-color: white;
+  border-radius: 4px;
+  border: none;
+  position: absolute;
+  bottom: 16px;
+  right: 16px; 
+  }
